@@ -15,4 +15,9 @@ public class CuentaBancaria {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: $" +saldo);
     }
+    
+    
+    public void consignar(double valor) {
+        saldo += valor; 
+    }
 }
