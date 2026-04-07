@@ -22,6 +22,12 @@ public class Modulo1_POO {
         
         // MOSTRAR INFO 
         est1.mostrarInformacion();
+        
+        // EJERCICIO 19: Explicación de Clase vs Objeto
+        // "Estudiante" es una clase porque es el molde, plantilla o plano que define 
+        // qué atributos (nombre, código) y métodos tendrá cualquier estudiante.
+        // "est" (o est1) es un objeto porque es una instancia concreta y real creada 
+        // a partir de ese molde, con datos específicos en la memoria.
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE VEHICULO ---");
     
