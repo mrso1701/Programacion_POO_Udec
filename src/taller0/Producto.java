@@ -13,4 +13,13 @@ public class Producto {
         System.out.println("Precio: " + precio);
         System.out.println("Stock: " + stock);
     }
+    
+    public void vender(int cantidad) {
+    // Validación: si hay suficientes productos en stock
+    if (cantidad <= stock) {
+        stock -= cantidad;
+    } else {
+        System.out.println("No hay suficiente stock para la venta");
+       }
+    }
 }
