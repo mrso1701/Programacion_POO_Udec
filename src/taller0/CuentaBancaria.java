@@ -6,8 +6,14 @@ public class CuentaBancaria {
     public String titular;
     public double saldo;
 
-   
+    public CuentaBancaria(String numeroCuenta, String titular, double saldoInicial) {
+        this.numeroCuenta = numeroCuenta;
+        this.titular = titular;
+        this.saldo = saldoInicial;
+    }
 
+   
+    
     // Método para mostrar el estado de la cuenta
     public void mostrarSaldo() {
          System.out.println("--- Informacion de la cuenta ---");
