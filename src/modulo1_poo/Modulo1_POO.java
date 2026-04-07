@@ -143,5 +143,39 @@ public class Modulo1_POO {
         cuenta2.saldo = 12000000;
         
         cuenta2.mostrarSaldo();
+        
+        //////////////////////////////////////////////////////////////////
+        System.out.println("\n--- CLASE LIBRO ---");
+        Libro l1 = new Libro();
+        l1.titulo = "Cien años de soledad";
+        l1.autor = "Gabriel García Márquez";
+        l1.paginas = 496;
+
+       Libro l2 = new Libro();
+       l2.titulo = "El resplandor";
+       l2.autor = "Stephen King";
+       l2.paginas = 447;
+
+       Libro l3 = new Libro();
+       l3.titulo = "Don Quijote de la Mancha";
+       l3.autor = "Miguel de Cervantes";
+       l3.paginas = 1032;
+
+       Libro l4 = new Libro();
+       l4.titulo = "El principito";
+       l4.autor = "Antoine de Saint-Exupéry";
+       l4.paginas = 96;
+
+       // Mostramos los objetos en consola
+       l1.mostrarInfo();
+       l2.mostrarInfo();
+       l3.mostrarInfo();
+       l4.mostrarInfo();
+
+       // CONCLUSIÓN DEL EJERCICIO:
+     /*La clase 'Libro' actúa como plantilla porque define la estructura común 
+   (todos los libros tienen título, autor y páginas) sin representar a ninguno en particular. 
+   Los objetos (l1, l2, l3, l4) son casos concretos porque existen en la memoria 
+   con datos reales, permitiendo que el programa maneje información específica de cada obra.*/
      }
 }
