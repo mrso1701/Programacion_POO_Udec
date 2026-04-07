@@ -159,6 +159,16 @@ public class Modulo1_POO {
         
         cuenta2.mostrarSaldo();
         
+        //Ejercicio 28
+        CuentaBancaria ct1 = new CuentaBancaria("001", "Andrés Rodríguez", 500.0);
+        CuentaBancaria ct2 = new CuentaBancaria("002", "María García", 1200.50);
+        CuentaBancaria ct3 = new CuentaBancaria("003", "Juan Pérez", 0.0);
+
+         // Mostramos la información de las tres para verificar
+         ct1.mostrarSaldo();
+         ct2.mostrarSaldo();
+         ct3.mostrarSaldo();
+        
         //////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE LIBRO ---");
         Libro l1 = new Libro();

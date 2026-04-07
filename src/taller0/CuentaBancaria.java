@@ -5,11 +5,13 @@ public class CuentaBancaria {
     public String numeroCuenta;
     public String titular;
     public double saldo;
+    
+    public CuentaBancaria(){}
 
-    public CuentaBancaria(String numeroCuenta, String titular, double saldoInicial) {
+    public CuentaBancaria(String numeroCuenta, String titular, double saldo) {
         this.numeroCuenta = numeroCuenta;
         this.titular = titular;
-        this.saldo = saldoInicial;
+        this.saldo = saldo;
     }
 
    
