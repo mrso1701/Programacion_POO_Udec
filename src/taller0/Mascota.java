@@ -15,4 +15,8 @@ public class Mascota {
         System.out.println("Especie: " + especie);
         System.out.println("Edad: " + edad);
     }
+    
+    public void cumplirAnios() {
+        edad += 1;
+    }
 }
