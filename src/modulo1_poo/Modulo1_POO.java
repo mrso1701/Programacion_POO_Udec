@@ -239,5 +239,17 @@ public class Modulo1_POO {
      // Mostramos ambos en la consola para verificar que se guardaron bien
      libroA.mostrarInfo();
      libroB.mostrarInfo();
+     
+     
+     // Prueba Ejercicio 33: Constructor Copia 
+     Libro original = new Libro("La Vorágine", "José Eustasio Rivera", 300);
+     // Creamos la copia pasando el objeto 'original' como argumento
+     Libro copia = new Libro(original);
+
+     System.out.println("--- Datos del Libro Original ---");
+     original.mostrarInfo();
+     
+     System.out.println("--- Datos del Libro Copia ---");
+     copia.mostrarInfo();
      }
 }
