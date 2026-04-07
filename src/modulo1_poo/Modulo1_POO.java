@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package modulo1_poo;
 
-/**
- *
- * @author LENOVO
- */
+import taller0.*;
+
 public class Modulo1_POO {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+       
+    }    
     
+     public static void ejecutarBloque1() {
+        System.out.println("\n--- [BLOQUE A: RECONOCIMIENTO DE CLASES] ---");
+        Estudiante estudiante = new Estudiante(); 
+        
+        // Asignación manual
+        estudiante.nombre = "Andrés David Rodríguez";
+        estudiante.codigo = "750241000";
+        estudiante.semestre = 3;
+
+        // MOSTRAR INFO 
+        estudiante.mostrarInformacion();
+     }
 }

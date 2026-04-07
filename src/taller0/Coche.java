@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package taller0;
 
-/**
- *
- * @author LENOVO
- */
 public class Coche {
-    
+    String marca;
+    String modelo;
+    String color;
+
+    // Constructor: Inicializa el objeto
+    public Coche(String marca, String modelo, String color) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+    }
+
+  
+    public void mostrarDetalles() {
+        System.out.println("Coche: " + marca + " " + modelo + " | Color: " + color);
+    }
 }

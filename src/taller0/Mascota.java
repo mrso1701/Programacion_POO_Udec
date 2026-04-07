@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package taller0;
 
-/**
- *
- * @author LENOVO
- */
+
 public class Mascota {
-    
+    // Atributos: Estado de la mascota
+    String nombre;
+    String especie;
+    int edad;
+
+    // Constructor: Inicializa los datos al crear la mascota
+    public Mascota(String nombre, String especie, int edad) {
+        this.nombre = nombre;
+        this.especie = especie;
+        this.edad = edad;
+    }
+
+    public void mostrarMascota() {
+        System.out.println("Mascota: " + nombre + " | Especie: " + especie + " | Edad: " + edad + " años");
+    }
 }
