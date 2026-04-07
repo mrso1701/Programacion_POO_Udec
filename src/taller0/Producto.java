@@ -22,4 +22,8 @@ public class Producto {
         System.out.println("No hay suficiente stock para la venta");
        }
     }
+    
+    public void restablecer(int cantidad){
+        stock += cantidad;
+    }
 }
