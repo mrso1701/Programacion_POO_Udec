@@ -23,11 +23,12 @@ public class Modulo1_POO {
         // MOSTRAR INFO 
         est1.mostrarInformacion();
         
-        // EJERCICIO 19: Explicación de Clase vs Objeto
-        // "Estudiante" es una clase porque es el molde, plantilla o plano que define 
-        // qué atributos (nombre, código) y métodos tendrá cualquier estudiante.
-        // "est" (o est1) es un objeto porque es una instancia concreta y real creada 
-        // a partir de ese molde, con datos específicos en la memoria.
+        /* EJERCICIO 19: Explicación de Clase vs Objeto
+        "Estudiante" es una clase porque es el molde, plantilla o plano que define 
+        qué atributos (nombre, código) y métodos tendrá cualquier estudiante.
+        "est" (o est1) es un objeto porque es una instancia concreta y real creada 
+        a partir de ese molde, con datos específicos en la memoria.*/
+        
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE VEHICULO ---");
     
@@ -45,8 +46,22 @@ public class Modulo1_POO {
         carro2.marca = "Mazda";
         carro2.modelo = "3";
         carro2.velocidadActual = 74.6;
-         System.out.println("\nVehiculo 2: ");
+        System.out.println("\nVehiculo 2: ");
         carro2.mostrarEstado();
+        
+        
+        Coche carro3 = new Coche();
+        carro3.marca = "Mazda";     // Atributo IGUAL
+        carro3.modelo = "3";        // Distinto
+        carro3.velocidadActual = 0; // Distinto
+        carro3.mostrarEstado();
+        
+        Coche carro4 = new Coche();
+        carro4.marca = "Mazda";     // Atributo IGUAL
+        carro4.modelo = "CX-5";     // Distinto
+        carro4.velocidadActual = 80;// Distinto
+        carro4.mostrarEstado();
+         
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE PRODUCTO ---");
         
@@ -73,6 +88,31 @@ public class Modulo1_POO {
         prod3.stock = 12;
         
         prod3.mostrarProducto();
+        
+        // EJERCICIO 20: Tres objetos de una misma clase
+        Producto p4 = new Producto();
+        p4.nombre = "Celular";
+        p4.precio = 1500.0;
+        p4.stock = 5;
+
+        Producto p5 = new Producto();
+        p5.nombre = "Teclado";
+        p5.precio = 50.0;
+        p5.stock = 20;
+
+        Producto p6 = new Producto();
+        p6.nombre = "Monitor";
+        p6.precio = 300.0;
+        p6.stock = 10;
+
+
+     /*EXPLICACIÓN EJERCICIO 20:
+     Qué comparten: Los tres objetos comparten la misma CLASE (Producto), 
+     lo que significa que tienen los mismos atributos (nombre, precio, stock) 
+     y los mismos métodos (vender, reabastecer).
+     En qué se diferencian: Se diferencian en su ESTADO. Cada objeto tiene 
+     valores distintos en sus atributos y ocupa un lugar único en la memoria.*/
+               
         
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE MASCOTA ---");
