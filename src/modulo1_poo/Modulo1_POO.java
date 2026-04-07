@@ -19,6 +19,12 @@ public class Modulo1_POO {
         est1.codigo = "750241000";
         est1.semestre = 3;
         
+         /* EJERCICIO 19: Explicación de Clase vs Objeto
+        "Estudiante" es una clase porque es el molde, plantilla o plano que define 
+        qué atributos (nombre, código) y métodos tendrá cualquier estudiante.
+        "est" (o est1) es un objeto porque es una instancia concreta y real creada 
+        a partir de ese molde, con datos específicos en la memoria.*/
+        
         // MOSTRAR INFO 
         est1.mostrarInformacion();
         
@@ -35,12 +41,7 @@ public class Modulo1_POO {
         Estudiante est4 = new Estudiante("Alejandor Rodriguez", "39359498",5);
         est4.mostrarInformacion();
         
-        /* EJERCICIO 19: Explicación de Clase vs Objeto
-        "Estudiante" es una clase porque es el molde, plantilla o plano que define 
-        qué atributos (nombre, código) y métodos tendrá cualquier estudiante.
-        "est" (o est1) es un objeto porque es una instancia concreta y real creada 
-        a partir de ese molde, con datos específicos en la memoria.*/
-        
+             
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE VEHICULO ---");
     
@@ -139,6 +140,14 @@ public class Modulo1_POO {
      y los mismos métodos (vender, reabastecer).
      En qué se diferencian: Se diferencian en su ESTADO. Cada objeto tiene 
      valores distintos en sus atributos y ocupa un lugar único en la memoria.*/
+     
+       //Ejercicio 31
+       
+       Producto productoBasico = Producto.crearProductoBasico("Lapiz");
+       Producto productoBasico2 = Producto.crearProductoBasico("Licuadora");
+       
+       productoBasico.mostrarProducto();
+       productoBasico2.mostrarProducto();
                
         
         ////////////////////////////////////////////////////////////////////

@@ -14,7 +14,11 @@ public class Producto {
         this.stock = stock;
     }
     
-    public static void crearProductoBasico(){}
+    public static Producto crearProductoBasico(String nombre) {
+        // Crea un producto con valores por defecto 
+        return new Producto(nombre, 100000.0, 1);
+    }
+    
     
     public void mostrarProducto() {
         System.out.println("--- Informacion del producto ---");
