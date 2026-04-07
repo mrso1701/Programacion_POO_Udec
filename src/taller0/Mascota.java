@@ -10,6 +10,9 @@ public class Mascota {
 
 
     public void mostrarMascota() {
-        System.out.println("Mascota: " + nombre + " | Especie: " + especie + " | Edad: " + edad + " años");
+        System.out.println("--- Informacion de la mascota ---");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Especie: " + especie);
+        System.out.println("Edad: " + edad);
     }
 }

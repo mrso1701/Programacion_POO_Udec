@@ -5,24 +5,25 @@ import taller0.*;
 public class Modulo1_POO {
 
     public static void main(String[] args) {
-       
+       ejecutarBloque();
     }    
     
-     public static void ejecutarBloque1() {
+     public static void ejecutarBloque() {
         System.out.println("\n--- [OBJETOS] ---");
         
         System.out.println("\n--- CLASE ESTUDIANTE ---");
         Estudiante est1 = new Estudiante(); 
         
         // Asignación manual
-        est1.nombre = "Andrés David Rodríguez";
+        est1.nombre = "Andres David Rodríguez";
         est1.codigo = "750241000";
         est1.semestre = 3;
+        
         
         // MOSTRAR INFO 
         est1.mostrarInformacion();
         ////////////////////////////////////////////////////////////////////
-        System.out.println("\n--- CLASE VEHÍCULO ---");
+        System.out.println("\n--- CLASE VEHICULO ---");
     
         // Instanciamos el vehículo 
         Coche carro1 = new Coche(); 
@@ -49,7 +50,7 @@ public class Modulo1_POO {
         prod1.precio = 3000000.0;
         prod1.stock = 12;
         
-        prod1.mostrarDetalles();
+        prod1.mostrarProducto();
         
         Producto prod2 = new Producto();
         
@@ -57,7 +58,7 @@ public class Modulo1_POO {
         prod2.precio = 1500000.0;
         prod2.stock = 4;
         
-        prod2.mostrarDetalles();
+        prod2.mostrarProducto();
         
         Producto prod3 = new Producto();
         
@@ -65,6 +66,6 @@ public class Modulo1_POO {
         prod3.precio = 3000000.0;
         prod3.stock = 12;
         
-        prod3.mostrarDetalles();
+        prod3.mostrarProducto();
      }
 }

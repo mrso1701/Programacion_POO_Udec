@@ -8,7 +8,7 @@ public class Estudiante {
     
     
     public void mostrarInformacion() {
-        System.out.println("--- Información del Estudiante ---");
+        System.out.println("--- Informacion del Estudiante ---");
         System.out.println("Nombre: " + nombre);
         System.out.println("Código: " + codigo);
         System.out.println("Semestre: " + semestre);
