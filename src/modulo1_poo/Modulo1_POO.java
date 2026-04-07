@@ -12,15 +12,15 @@ public class Modulo1_POO {
         System.out.println("\n--- [OBJETOS] ---");
         
         System.out.println("\n--- CLASE ESTUDIANTE ---");
-        Estudiante estudiante = new Estudiante(); 
+        Estudiante est1 = new Estudiante(); 
         
         // Asignación manual
-        estudiante.nombre = "Andrés David Rodríguez";
-        estudiante.codigo = "750241000";
-        estudiante.semestre = 3;
+        est1.nombre = "Andrés David Rodríguez";
+        est1.codigo = "750241000";
+        est1.semestre = 3;
         
         // MOSTRAR INFO 
-        estudiante.mostrarInformacion();
+        est1.mostrarInformacion();
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE VEHÍCULO ---");
     
