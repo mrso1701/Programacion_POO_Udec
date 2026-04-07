@@ -1,19 +1,22 @@
 package taller0;
 
 public class Coche {
-    String marca;
-    String modelo;
-    String color;
+    public String marca;
+    public String modelo;
+    public double velocidadActual; // Usamos double por si la velocidad tiene decimales
 
-    // Constructor: Inicializa el objeto
-    public Coche(String marca, String modelo, String color) {
+    // Constructor para inicializar el vehículo
+    public Coche(String marca, String modelo, double velocidadActual) {
         this.marca = marca;
         this.modelo = modelo;
-        this.color = color;
+        this.velocidadActual = velocidadActual;
     }
 
   
-    public void mostrarDetalles() {
-        System.out.println("Coche: " + marca + " " + modelo + " | Color: " + color);
+    public void mostrarEstado() {
+        System.out.println("--- Información del Coche ---");
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Color: " + velocidadActual);
     }
 }
