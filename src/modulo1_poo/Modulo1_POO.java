@@ -19,9 +19,21 @@ public class Modulo1_POO {
         est1.codigo = "750241000";
         est1.semestre = 3;
         
-        
         // MOSTRAR INFO 
         est1.mostrarInformacion();
+        
+        Estudiante est2 = new Estudiante(); 
+        
+        est2.nombre = "Isabella Yepes";
+        est2.codigo = "123050345";
+        est2.semestre = 6;
+        est2.mostrarInformacion();
+        
+        Estudiante est3 = new Estudiante("Rafael Maldonado","499450123");
+        est3.mostrarInformacion();
+        
+        Estudiante est4 = new Estudiante("Alejandor Rodriguez", "39359498",5);
+        est4.mostrarInformacion();
         
         /* EJERCICIO 19: Explicación de Clase vs Objeto
         "Estudiante" es una clase porque es el molde, plantilla o plano que define 
