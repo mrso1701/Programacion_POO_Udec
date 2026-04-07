@@ -25,9 +25,23 @@ public class Modulo1_POO {
         System.out.println("\n--- CLASE VEHÍCULO ---");
     
         // Instanciamos el vehículo 
-        Coche miCarro = new Coche("Toyota", "Prado", 80.5);
+        Coche carro1 = new Coche(); 
     
-         // Mostramos la información
-        miCarro.mostrarEstado();
+        carro1.marca = "Toyota";
+        carro1.modelo = "Corolla";
+        carro1.velocidadActual = 32.0;
+         System.out.println("Vehiculo 1: ");
+        carro1.mostrarEstado();
+        
+        Coche carro2 = new Coche(); 
+    
+        carro2.marca = "Mazda";
+        carro2.modelo = "3";
+        carro2.velocidadActual = 74.6;
+         System.out.println("\nVehiculo 2: ");
+        carro2.mostrarEstado();
+        ////////////////////////////////////////////////////////////////////
+        System.out.println("\n--- CLASE PRODUCTO ---");
+        
      }
 }

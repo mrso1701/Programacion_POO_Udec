@@ -7,8 +7,6 @@ public class Producto {
     int stock;
 
     
-
-    
     public void mostrarDetalles() {
         System.out.println("--- Información del Estudiante ---");
         System.out.println("Nombre: " + nombre);
