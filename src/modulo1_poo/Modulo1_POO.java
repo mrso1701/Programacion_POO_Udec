@@ -74,7 +74,7 @@ public class Modulo1_POO {
         
         mascota.nombre = "Frodo";
         mascota.especie = "Pomerania";
-        mascota.edad = 2;
+        mascota.edad = 4;
         
         mascota.mostrarMascota();
      }
