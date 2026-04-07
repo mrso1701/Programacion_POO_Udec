@@ -12,4 +12,8 @@ public class Coche {
         System.out.println("Modelo: " + modelo);
         System.out.println("Velocidad actual: " + velocidadActual);
     }
+    
+    public void Acelerar(){
+        velocidadActual+=10;
+    }
 }
