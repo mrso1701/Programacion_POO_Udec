@@ -15,6 +15,12 @@ public class Libro {
         this.paginas = paginas;
     }
     
+    public Libro(Libro otro) {
+        this.titulo = otro.titulo;
+        this.autor = autor;
+        this.paginas = otro.paginas;
+    }
+    
     public void mostrarInfo(){
         System.out.println("--- INFORMACION DEL LIBRO ---");
         System.out.println("Titulo:" + titulo);
