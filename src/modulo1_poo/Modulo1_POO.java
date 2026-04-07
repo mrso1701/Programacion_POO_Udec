@@ -171,11 +171,27 @@ public class Modulo1_POO {
        l2.mostrarInfo();
        l3.mostrarInfo();
        l4.mostrarInfo();
+       
 
        // CONCLUSIÓN DEL EJERCICIO:
      /*La clase 'Libro' actúa como plantilla porque define la estructura común 
    (todos los libros tienen título, autor y páginas) sin representar a ninguno en particular. 
    Los objetos (l1, l2, l3, l4) son casos concretos porque existen en la memoria 
    con datos reales, permitiendo que el programa maneje información específica de cada obra.*/
+     
+     //EJERCICIO 25
+     // Primero creamos el objeto "en blanco" y luego le asignamos datos uno por uno
+     Libro libroA = new Libro(); 
+     libroA.titulo = "Crónica de una muerte anunciada";
+     libroA.autor = "Gabriel García Márquez";
+     libroA.paginas = 150;
+
+     
+     // Pasamos todos los datos de una vez dentro de los paréntesis
+     Libro libroB = new Libro("Rayuela", "Julio Cortázar", 600);
+
+     // Mostramos ambos en la consola para verificar que se guardaron bien
+     libroA.mostrarInfo();
+     libroB.mostrarInfo();
      }
 }
