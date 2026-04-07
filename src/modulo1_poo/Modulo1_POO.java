@@ -43,5 +43,28 @@ public class Modulo1_POO {
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE PRODUCTO ---");
         
+        Producto prod1 = new Producto();
+        
+        prod1.nombre = "Asus TUFF GAMING";
+        prod1.precio = 3000000.0;
+        prod1.stock = 12;
+        
+        prod1.mostrarDetalles();
+        
+        Producto prod2 = new Producto();
+        
+        prod2.nombre = "Impresora EPSON";
+        prod2.precio = 1500000.0;
+        prod2.stock = 4;
+        
+        prod2.mostrarDetalles();
+        
+        Producto prod3 = new Producto();
+        
+        prod3.nombre = "Asus TUFF GAMING";
+        prod3.precio = 3000000.0;
+        prod3.stock = 12;
+        
+        prod3.mostrarDetalles();
      }
 }

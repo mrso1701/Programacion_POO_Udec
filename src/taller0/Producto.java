@@ -2,9 +2,9 @@ package taller0;
 
 
 public class Producto {
-    String nombre;
-    double precio;
-    int stock;
+    public String nombre;
+    public double precio;
+    public int stock;
 
     
     public void mostrarDetalles() {
