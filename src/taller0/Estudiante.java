@@ -6,6 +6,19 @@ public class Estudiante {
     public int semestre;
 
     
+    public Estudiante(){}
+
+    public Estudiante(String nombre, String codigo) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+    }
+
+    public Estudiante(String nombre, String codigo, int semestre) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.semestre = semestre;
+    }
+    
     
     public void mostrarInformacion() {
         System.out.println("--- Informacion del Estudiante ---");
