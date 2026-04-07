@@ -20,4 +20,13 @@ public class CuentaBancaria {
     public void consignar(double valor) {
         saldo += valor; 
     }
+    
+    public void retirar(double valor) {
+    // Solo restamos si el saldo es mayor o igual a lo que queremos sacar
+    if (saldo >= valor) {
+        saldo -= valor;
+    } else {
+        System.out.println("Saldo insuficiente");
+    }
+    }
 }
