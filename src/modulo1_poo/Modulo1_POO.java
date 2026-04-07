@@ -104,7 +104,22 @@ public class Modulo1_POO {
         p6.nombre = "Monitor";
         p6.precio = 300.0;
         p6.stock = 10;
+        
+        
+        // EJERCICIO 26: Probando constructores en Producto
 
+         // 1. Usando el constructor vacío
+         Producto p7 = new Producto();
+         p7.nombre = "Mouse Gamer";
+         p7.precio = 25.0;
+         p7.stock = 15;
+
+         // 2. Usando el constructor con parámetros (Más rápido)
+         Producto p8 = new Producto("Monitor 4K", 350.0, 8);
+
+         // Imprimimos ambos
+        prod1.mostrarProducto();
+        prod2.mostrarProducto();
 
      /*EXPLICACIÓN EJERCICIO 20:
      Qué comparten: Los tres objetos comparten la misma CLASE (Producto), 

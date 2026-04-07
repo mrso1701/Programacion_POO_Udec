@@ -6,6 +6,14 @@ public class Producto {
     public double precio;
     public int stock;
 
+    public Producto(){}
+
+    public Producto(String nombre, double precio, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+    
     
     public void mostrarProducto() {
         System.out.println("--- Informacion del producto ---");
