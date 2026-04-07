@@ -67,5 +67,15 @@ public class Modulo1_POO {
         prod3.stock = 12;
         
         prod3.mostrarProducto();
+        ////////////////////////////////////////////////////////////////////
+        System.out.println("\n--- CLASE MASCOTA ---");
+        
+        Mascota mascota = new Mascota();
+        
+        mascota.nombre = "Frodo";
+        mascota.especie = "Pomerania";
+        mascota.edad = 2;
+        
+        mascota.mostrarMascota();
      }
 }

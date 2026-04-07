@@ -4,9 +4,9 @@ package taller0;
 
 public class Mascota {
     // Atributos: Estado de la mascota
-    String nombre;
-    String especie;
-    int edad;
+    public String nombre;
+    public String especie;
+    public int edad;
 
 
     public void mostrarMascota() {
