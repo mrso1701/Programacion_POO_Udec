@@ -2,14 +2,17 @@ package taller0;
 
 
 public class CuentaBancaria {
-    String numeroCuenta;
-    String titular;
-    double saldo;
+    public String numeroCuenta;
+    public String titular;
+    public double saldo;
 
    
 
     // Método para mostrar el estado de la cuenta
     public void mostrarSaldo() {
-        System.out.println("Cuenta: " + numeroCuenta + " | Titular: " + titular + " | Saldo Actual: $" + saldo);
+         System.out.println("--- Informacion de la cuenta ---");
+        System.out.println("Numero de cuenta: " + numeroCuenta);
+        System.out.println("Titular: " + titular);
+        System.out.println("Saldo: $" +saldo);
     }
 }

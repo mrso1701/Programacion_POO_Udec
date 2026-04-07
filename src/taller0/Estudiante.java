@@ -10,7 +10,7 @@ public class Estudiante {
     public void mostrarInformacion() {
         System.out.println("--- Informacion del Estudiante ---");
         System.out.println("Nombre: " + nombre);
-        System.out.println("Código: " + codigo);
+        System.out.println("Codigo: " + codigo);
         System.out.println("Semestre: " + semestre);
     }
 }

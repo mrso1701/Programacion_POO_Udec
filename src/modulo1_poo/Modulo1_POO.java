@@ -15,7 +15,7 @@ public class Modulo1_POO {
         Estudiante est1 = new Estudiante(); 
         
         // Asignación manual
-        est1.nombre = "Andres David Rodríguez";
+        est1.nombre = "Andres David Rodriguez";
         est1.codigo = "750241000";
         est1.semestre = 3;
         
@@ -67,6 +67,7 @@ public class Modulo1_POO {
         prod3.stock = 12;
         
         prod3.mostrarProducto();
+        
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE MASCOTA ---");
         
@@ -77,5 +78,24 @@ public class Modulo1_POO {
         mascota.edad = 4;
         
         mascota.mostrarMascota();
+        
+        ////////////////////////////////////////////////////////////////////
+        System.out.println("\n--- CLASE CUENTA BANCARIA ---");
+        
+        CuentaBancaria cuenta1 = new CuentaBancaria();
+        
+        cuenta1.numeroCuenta = "14300545";
+        cuenta1.titular = "Andres Rodriguez";
+        cuenta1.saldo = 3400000;
+        
+        cuenta1.mostrarSaldo();
+        
+        CuentaBancaria cuenta2 = new CuentaBancaria();
+        
+        cuenta2.numeroCuenta = "49951293";
+        cuenta2.titular = "Alejandro Rodriguez";
+        cuenta2.saldo = 12000000;
+        
+        cuenta2.mostrarSaldo();
      }
 }
