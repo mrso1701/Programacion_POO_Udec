@@ -14,6 +14,7 @@ public class Producto {
         this.stock = stock;
     }
     
+    public static void crearProductoBasico(){}
     
     public void mostrarProducto() {
         System.out.println("--- Informacion del producto ---");
