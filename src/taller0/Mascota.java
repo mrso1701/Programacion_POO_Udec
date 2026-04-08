@@ -7,10 +7,8 @@ public class Mascota {
     public String nombre;
     public String especie;
     public int edad;
-    
-} // <--- Cerramos la clase AQUÍ adrede
 
-    //Los metodos quedan fueran de la clase es decir, quedan huerfanos.
+    // AHORA SÍ: El método está dentro de la clase
     public void mostrarMascota() {
         System.out.println("--- Informacion de la mascota ---");
         System.out.println("Nombre: " + nombre);
@@ -21,4 +19,4 @@ public class Mascota {
     public void cumplirAnios() {
         edad += 1;
     }
-
+}// <--- La llave de cierre ahora va después del método
