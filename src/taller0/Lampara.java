@@ -1,7 +1,6 @@
 package taller0;
 
-// ERROR: He eliminado la declaración de la clase adrede
-// public class Lampara {
+public class Lampara { // CORRECCIÓN: Devolvemos el nombre y apertura
     public String marca;
     public boolean encendida;
     
@@ -20,4 +19,4 @@ package taller0;
             System.out.println("Apagada");
         }
     }
-// } <--- También borré esta llave
+} // CORRECCIÓN: Devolvemos la llave de cierre
