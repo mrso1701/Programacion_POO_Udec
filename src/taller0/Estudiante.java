@@ -30,4 +30,10 @@ public class Estudiante {
     public void cambiarSemestre(int nuevoSemestre) {
         semestre = nuevoSemestre;
     }
+    
+    public void acariciarMascota(Mascota m) {
+    // Esto dará error porque "nombre" no existe en este contexto 
+    // y no sabemos de qué mascota estamos hablando.
+    System.out.println("Acariciando a " + nombre); 
+    }
 }

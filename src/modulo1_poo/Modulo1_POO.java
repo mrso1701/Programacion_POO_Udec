@@ -41,6 +41,14 @@ public class Modulo1_POO {
         Estudiante est4 = new Estudiante("Alejandor Rodriguez", "39359498",5);
         est4.mostrarInformacion();
         
+         Mascota miPerro = new Mascota();
+         miPerro.nombre = "Firulais";
+         
+         est1.acariciarMascota(miPerro);
+
+        // ERROR: Intentar acceder a los datos de 'miPerro' 
+        // como si fueran globales o sin usar la variable correcta.
+     
              
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE VEHICULO ---");
@@ -160,6 +168,8 @@ public class Modulo1_POO {
         mascota.edad = 4;
         
         mascota.mostrarMascota();
+        
+        
         
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE CUENTA BANCARIA ---");
