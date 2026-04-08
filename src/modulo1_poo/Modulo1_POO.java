@@ -273,5 +273,14 @@ public class Modulo1_POO {
      naturaleza y estructura. La clase
      define el "qué es" (un curso con nombre, código y créditos), 
      mientras que los objetos definen el "quién es" (la información específica).*/
+     
+     /////////////////////////////////////////////////////////////////////////////
+     System.out.println("====== CLASE CELULAR ======");
+     
+     // EJERCICIO 47: Intento de uso sin creación (ERROR)
+     Celular miCelular; // Solo declaramos la variable, pero es "null"
+
+     // La siguiente línea causará el error porque el objeto NO existe en memoria
+     miCelular.encender();
      }
 }
