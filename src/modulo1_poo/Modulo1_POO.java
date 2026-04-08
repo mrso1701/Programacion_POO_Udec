@@ -251,5 +251,27 @@ public class Modulo1_POO {
      
      System.out.println("--- Datos del Libro Copia ---");
      copia.mostrarInfo();
+     
+     ////////////////////////////////////////////////////////////////////////////////
+     System.out.println("\n--- CLASE CURSO ---");
+     //EJERCICIO 42
+     Curso curso1 = new Curso();
+     curso1.nombre = "Programación Orientada a Objetos";
+     curso1.codigo = "POO101";
+     curso1.creditos = 4;
+
+     Curso curso2 = new Curso();
+     curso2.nombre = "Cálculo Vectorial";
+     curso2.codigo = "MAT202";
+     curso2.creditos = 3;
+     
+     curso1.mostrarDetalles();
+     curso2.mostrarDetalles();
+     /*"Aunque curso1 y curso2 tienen datos distintos (
+     uno es de Programación y otro de Cálculo ambos pertenecen
+     a la misma clase Curso porque comparten la misma 
+     naturaleza y estructura. La clase
+     define el "qué es" (un curso con nombre, código y créditos), 
+     mientras que los objetos definen el "quién es" (la información específica).*/
      }
 }
