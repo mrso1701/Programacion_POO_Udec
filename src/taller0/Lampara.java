@@ -1,6 +1,7 @@
 package taller0;
 
-public class Lampara {
+// ERROR: He eliminado la declaración de la clase adrede
+// public class Lampara {
     public String marca;
     public boolean encendida;
     
@@ -19,4 +20,4 @@ public class Lampara {
             System.out.println("Apagada");
         }
     }
-}
+// } <--- También borré esta llave
