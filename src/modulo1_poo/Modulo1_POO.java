@@ -161,13 +161,10 @@ public class Modulo1_POO {
         ////////////////////////////////////////////////////////////////////
         System.out.println("\n--- CLASE MASCOTA ---");
         
-        Mascota mascota = new Mascota();
-        
-        mascota.nombre = "Frodo";
-        mascota.especie = "Pomerania";
-        mascota.edad = 4;
-        
-        mascota.mostrarMascota();
+        // ERROR: El estudiante definió la clase Mascota, 
+        // pero aquí en el Main el código está vacío o solo hay comentarios.
+    
+        // Se olvidó de: Mascota miMascota = new Mascota();
         
         
         
