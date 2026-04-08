@@ -198,7 +198,7 @@ public class Modulo1_POO {
         cuenta2.mostrarSaldo();
         
         //Ejercicio 28
-        CuentaBancaria ct1 = new CuentaBancaria("001", "Andrés Rodríguez", 500.0);
+        CuentaBancaria ct1 = new CuentaBancaria("001", "Andres Rodríguez", 500.0);
         CuentaBancaria ct2 = new CuentaBancaria("002", "María García", 1200.50);
         CuentaBancaria ct3 = new CuentaBancaria("003", "Juan Pérez", 0.0);
 
@@ -245,7 +245,7 @@ public class Modulo1_POO {
      //EJERCICIO 25
      // Primero creamos el objeto "en blanco" y luego le asignamos datos uno por uno
      Libro libroA = new Libro(); 
-     libroA.titulo = "Crónica de una muerte anunciada";
+     libroA.titulo = "Cronica de una muerte anunciada";
      libroA.autor = "Gabriel García Márquez";
      libroA.paginas = 150;
 
@@ -259,7 +259,7 @@ public class Modulo1_POO {
      
      
      // Prueba Ejercicio 33: Constructor Copia 
-     Libro original = new Libro("La Vorágine", "José Eustasio Rivera", 300);
+     Libro original = new Libro("La Voragine", "José Eustasio Rivera", 300);
      // Creamos la copia pasando el objeto 'original' como argumento
      Libro copia = new Libro(original);
 
@@ -273,12 +273,12 @@ public class Modulo1_POO {
      System.out.println("\n--- CLASE CURSO ---");
      //EJERCICIO 42
      Curso curso1 = new Curso();
-     curso1.nombre = "Programación Orientada a Objetos";
+     curso1.nombre = "Programacion Orientada a Objetos";
      curso1.codigo = "POO101";
      curso1.creditos = 4;
 
      Curso curso2 = new Curso();
-     curso2.nombre = "Cálculo Vectorial";
+     curso2.nombre = "Calculo Vectorial";
      curso2.codigo = "MAT202";
      curso2.creditos = 3;
      
