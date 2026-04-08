@@ -7,8 +7,10 @@ public class Mascota {
     public String nombre;
     public String especie;
     public int edad;
+    
+} // <--- Cerramos la clase AQUÍ adrede
 
-
+    //Los metodos quedan fueran de la clase es decir, quedan huerfanos.
     public void mostrarMascota() {
         System.out.println("--- Informacion de la mascota ---");
         System.out.println("Nombre: " + nombre);
@@ -19,4 +21,4 @@ public class Mascota {
     public void cumplirAnios() {
         edad += 1;
     }
-}
+
