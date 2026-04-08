@@ -6,10 +6,8 @@ public class Ventilador {
     public boolean encendido;
     
     public void encender(){
-        // ERROR: Al poner "boolean" aquí, creamos una variable nueva
-        // que solo existe dentro de este método.
-        boolean encendido = true; 
-        System.out.println("Variable local cambiada, pero el atributo no.");
+       // CORRECCIÓN: Quitamos el tipo de dato para usar el atributo global
+        encendido = true;
         velocidad = 1;
     }
     
