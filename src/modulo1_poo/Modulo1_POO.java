@@ -277,10 +277,10 @@ public class Modulo1_POO {
      /////////////////////////////////////////////////////////////////////////////
      System.out.println("====== CLASE CELULAR ======");
      
-     // EJERCICIO 47: Intento de uso sin creación (ERROR)
-     Celular miCelular; // Solo declaramos la variable, pero es "null"
+     // EJERCICIO 47: Uso correcto con instanciación
+     Celular miCelular = new Celular(); // <--- CORRECCIÓN: Ahora el objeto sí existe
 
-     // La siguiente línea causará el error porque el objeto NO existe en memoria
-     miCelular.encender();
+     miCelular.marca = "Samsung";
+     miCelular.encender(); // Ahora funciona perfectamente
      }
 }
