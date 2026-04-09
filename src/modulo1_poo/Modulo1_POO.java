@@ -359,5 +359,15 @@ public class Modulo1_POO {
         pedido3.mostrarDetalles();
         pedido4.mostrarDetalles();
         pedido5.mostrarDetalles();
+        
+        ////////////////////////////////////////////////////////////////
+        System.out.println("============== CLASE TEMPERATURA ============");
+        // EJERCICIO 71
+        // Ahora creamos el objeto y pasamos el valor de una vez
+        Temperatura t1 = new Temperatura(25.0);
+        t1.mostrarResultado();
+        
+        Temperatura t2 = new Temperatura(10.0);
+        t2.mostrarResultado();
      }
 }
