@@ -224,4 +224,44 @@ public class Main {
     m.nombre = "Frodo";
     e.acariciarMascota(m); // Pasamos la referencia 'm' al metodo
     }
+    
+    public static void ejecutarBloqueL() {
+    System.out.println("\n=== BLOQUE L: CONSOLIDACION FINAL - RUTINA GIMNASIO ===");
+
+    // Creacion de 5 objetos de la clase RutinaGimnasio
+    
+    // Objeto 1
+    RutinaGimnasio r1 = new RutinaGimnasio();
+    r1.musculoEntrenado = "Pecho (Press de Banca)";
+    r1.series = 4;
+    r1.repeticiones = 12;
+
+    // Objeto 2
+    RutinaGimnasio r2 = new RutinaGimnasio();
+    r2.musculoEntrenado = "Espalda (Dominadas)";
+    r2.series = 3;
+    r2.repeticiones = 10;
+
+    // Objeto 3
+    RutinaGimnasio r3 = new RutinaGimnasio();
+    r3.musculoEntrenado = "Pierna (Sentadillas)";
+    r3.series = 5;
+    r3.repeticiones = 8;
+
+    // Objeto 4
+    RutinaGimnasio r4 = new RutinaGimnasio();
+    r4.musculoEntrenado = "Hombro (Press Militar)";
+    r4.series = 4;
+    r4.repeticiones = 15;
+
+    // Objeto 5
+    RutinaGimnasio r5 = new RutinaGimnasio();
+    r5.musculoEntrenado = "Brazo (Curl de Biceps)";
+    r5.series = 3;
+    r5.repeticiones = 12;
+
+    // Demostracion de comportamiento
+    r1.completarSerie();
+    r3.completarSerie();
+    }
 }
