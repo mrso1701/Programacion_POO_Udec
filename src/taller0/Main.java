@@ -188,4 +188,21 @@ public class Main {
     System.out.println("Original:"); original.mostrarInfo();
     System.out.println("Copia:"); copia.mostrarInfo();
   }
+    
+    public static void ejecutarBloqueH() {
+    System.out.println("\n=== BLOQUE H: EJERCICIOS ARGUMENTATIVOS ===");
+
+    // Ejercicio 42
+    Curso c1 = new Curso();
+    c1.nombre = "Programacion Orientada a Objetos";
+    Curso c2 = new Curso();
+    c2.nombre = "Calculo Vectorial";
+    
+    System.out.println("Cursos creados: " + c1.nombre + " y " + c2.nombre);
+
+    // Ejercicio 44
+    Paciente p1 = new Paciente();
+    p1.nombre = "Andres Rodriguez";
+    System.out.println("Paciente instanciado: " + p1.nombre);
+}
 }
