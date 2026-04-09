@@ -447,4 +447,58 @@ public class Main {
         cuentaA.mostrarSaldo();
         cuentaB.mostrarSaldo();
     }
+    
+    public static void ejecutarBloqueD() {
+    System.out.println("\n=== BLOQUE D: CONCEPTOS Y ABSTRACCIÓN ===");
+
+    // EJERCICIO 19: Explicación de Clase vs Objeto
+    System.out.println("\n--- Ejercicio 19: Concepto Estudiante ---");
+    Estudiante est1 = new Estudiante("Andres Rodriguez", "750241", 3);
+    /* * EXPLICACIÓN:
+     * 'Estudiante' es una CLASE porque es el molde o plano que define la estructura 
+     * (atributos como nombre, codigo) que tendrán todos los alumnos.
+     * 'est1' es un OBJETÓ porque es una instancia real con datos específicos 
+     * que ocupa un espacio en la memoria RAM.
+     */
+    est1.mostrarInformacion();
+
+    // EJERCICIO 20: Tres objetos de la misma clase
+    System.out.println("\n--- Ejercicio 20: Tres objetos de Producto ---");
+    Producto p1 = new Producto("Teclado", 50.0, 10);
+    Producto p2 = new Producto("Mouse", 25.0, 20);
+    Producto p3 = new Producto("Monitor", 300.0, 5);
+
+    /*
+     * CONCLUSIÓN EJERCICIO 20:
+     * COMPARTEN: La estructura (atributos nombre, precio, stock) y el comportamiento (métodos).
+     * SE DIFERENCIAN: En su ESTADO. Cada uno tiene valores distintos y una identidad única.
+     */
+    p1.mostrarProducto(); p2.mostrarProducto(); p3.mostrarProducto();
+
+    // EJERCICIO 21: Atributo igual, demás distintos
+    System.out.println("\n--- Ejercicio 21: Atributos compartidos vs distintos ---");
+    Coche c1 = new Coche();
+    c1.marca = "Toyota"; c1.modelo = "Corolla"; c1.velocidadActual = 0;
+    
+    Coche c2 = new Coche();
+    c2.marca = "Toyota"; c2.modelo = "Hilux"; c2.velocidadActual = 80;
+    // Ambos comparten la MARCA ("Toyota"), pero son modelos y estados distintos.
+    c1.mostrarEstado();
+    c2.mostrarEstado();
+
+    // EJERCICIO 22: Clase Libro y Conclusión
+    System.out.println("\n--- Ejercicio 22: Clase Libro ---");
+    Libro l1 = new Libro("Cien años de soledad", "Gabo", 496);
+    Libro l2 = new Libro("El Resplandor", "Stephen King", 447);
+    Libro l3 = new Libro("Rayuela", "Julio Cortázar", 600);
+    Libro l4 = new Libro("El Principito", "Antoine de Saint-Exupéry", 96);
+
+    /*
+     * CONCLUSIÓN FINAL:
+     * La clase 'Libro' es una plantilla porque describe qué es un libro de forma genérica.
+     * Los objetos (l1, l2, l3, l4) son casos concretos porque representan libros reales
+     * con títulos y autores que podemos manipular en el sistema.
+     */
+    l1.mostrarInfo(); l2.mostrarInfo(); l3.mostrarInfo(); l4.mostrarInfo();
+}
 }
