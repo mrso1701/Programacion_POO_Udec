@@ -205,4 +205,23 @@ public class Main {
     p1.nombre = "Andres Rodriguez";
     System.out.println("Paciente instanciado: " + p1.nombre);
 }
+    
+    public static void ejecutarBloqueI() {
+    System.out.println("\n=== BLOQUE I: CORRECCION DE ERRORES ===");
+
+    // Ejemplo del Ejercicio 47: Error de instanciacion
+    System.out.println("--- Ejercicio 47: Correccion de objeto nulo ---");
+    Celular miCel; 
+    // miCel.encender(); // Esto daria error de compilacion o NullPointerException
+    miCel = new Celular(); // CORRECCION
+    miCel.encender();
+    System.out.println("Celular prendido exitosamente.");
+
+    // Ejemplo del Ejercicio 49: Referencia adecuada
+    System.out.println("\n--- Ejercicio 49: Uso de referencias ---");
+    Estudiante e = new Estudiante("Andres", "750", 3);
+    Mascota m = new Mascota();
+    m.nombre = "Frodo";
+    e.acariciarMascota(m); // Pasamos la referencia 'm' al metodo
+    }
 }

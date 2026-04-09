@@ -13,7 +13,7 @@ public class Coche {
         System.out.println("Velocidad actual: " + velocidadActual);
     }
     
-    public void Acelerar(){
+   public void Acelerar(){
         velocidadActual+=10;
     }
     
@@ -28,3 +28,4 @@ public class Coche {
         }
     }
 }
+ 
