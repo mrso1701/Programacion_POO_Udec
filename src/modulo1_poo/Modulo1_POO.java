@@ -305,45 +305,45 @@ public class Modulo1_POO {
      System.out.println("\n========= CLASE PEDIDO =========");
      // EJERCICIO 69: Creación de cinco objetos diferentes
         
-        Pedido p1 = new Pedido();
-        p1.numeroMesa = 5; 
-        p1.platoPrincipal = "Pizza Pepperoni"; 
-        p1.precio = 25000; 
-        p1.pagado = false;
+        Pedido pedido1 = new Pedido();
+        pedido1.numeroMesa = 5; 
+        pedido1.platoPrincipal = "Pizza Pepperoni"; 
+        pedido1.precio = 25000; 
+        pedido1.pagado = false;
 
         // Objeto 2
-        Pedido p2 = new Pedido();
-        p2.numeroMesa = 2; 
-        p2.platoPrincipal = "Hamburguesa Doble"; 
-        p2.precio = 18500; 
-        p2.pagado = true;
+        Pedido pedido2 = new Pedido();
+        pedido2.numeroMesa = 2; 
+        pedido2.platoPrincipal = "Hamburguesa Doble"; 
+        pedido2.precio = 18500; 
+        pedido2.pagado = true;
 
         // Objeto 3
-        Pedido p3 = new Pedido();
-        p3.numeroMesa = 10; 
-        p3.platoPrincipal = "Desgranado Familiar"; 
-        p3.precio = 35000; 
-        p3.pagado = false;
+        Pedido pedido3 = new Pedido();
+        pedido3.numeroMesa = 10; 
+        pedido3.platoPrincipal = "Desgranado Familiar"; 
+        pedido3.precio = 35000; 
+        pedido3.pagado = false;
 
         // Objeto 4
-        Pedido p4 = new Pedido();
-        p4.numeroMesa = 4; 
-        p4.platoPrincipal = "Perro Caliente"; 
-        p4.precio = 12000; 
-        p4.pagado = true;
+        Pedido pedido4 = new Pedido();
+        pedido4.numeroMesa = 4; 
+        pedido4.platoPrincipal = "Perro Caliente"; 
+        pedido4.precio = 12000; 
+        pedido4.pagado = true;
 
-        // Objeto 5
-        Pedido p5 = new Pedido();
-        p5.numeroMesa = 8; 
-        p5.platoPrincipal = "Salchipapa Especial"; 
-        p5.precio = 22000; 
-        p5.pagado = false;
+        // Objeto 5 
+        Pedido pedido5 = new Pedido();
+        pedido5.numeroMesa = 8; 
+        pedido5.platoPrincipal = "Salchipapa Especial"; 
+        pedido5.precio = 22000; 
+        pedido5.pagado = false;
 
         // Llamada al método para cada objeto
-        p1.mostrarDetalles();
-        p2.mostrarDetalles();
-        p3.mostrarDetalles();
-        p4.mostrarDetalles();
-        p5.mostrarDetalles();
+        pedido1.mostrarDetalles();
+        pedido2.mostrarDetalles();
+        pedido3.mostrarDetalles();
+        pedido4.mostrarDetalles();
+        pedido5.mostrarDetalles();
      }
 }
