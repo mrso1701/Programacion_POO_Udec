@@ -4,6 +4,6 @@ import taller0.*;
 public class Modulo1_POO {
 
     public static void main(String[] args) {
-        Main.ejecutarBloqueE();
+        Main.ejecutarBloqueF();
     }     
 }
