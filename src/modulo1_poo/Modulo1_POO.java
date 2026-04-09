@@ -369,5 +369,11 @@ public class Modulo1_POO {
         
         Temperatura t2 = new Temperatura(10.0);
         t2.mostrarResultado();
+        
+        /////////////////////////////////////////////////////////////////
+        System.out.println("\n============== CLASE AVION ================");
+        // Prueba Ejercicio 72 (Fábrica)
+        Avion miAvion = Avion.crearAvionComercial("Avianca", "Bogotá");
+        miAvion.mostrarInfo();
      }
 }
