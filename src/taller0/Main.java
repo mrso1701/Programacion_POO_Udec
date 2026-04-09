@@ -4,18 +4,7 @@ public class Main {
 
     
     public static void main(String[] args) {
-        ejecutarEstudiante();
-        ejecutarVehiculo();
-        ejecutarProducto();
-        ejecutarMascota();
-        ejecutarLibro();
-        ejecutarCurso();
-        ejecutarCurso();
-        ejecutarCelular();
-        ejecutarPedido();
-        ejecutarTemperatura();
-        ejecutarAvion();
-        ejecutarUsuarioSistema();
+        ejecutarBloqueB();
     }
     
     public static void ejecutarEstudiante(){
@@ -399,5 +388,63 @@ public class Main {
         System.out.println("--- Usuarios ---");
         user1.mostrarUsuario();
         userClonado.mostrarUsuario();
+    }
+    
+    public static void ejecutarBloqueB(){
+        System.out.println("\n=== BLOQUE B: CONSTRUCCIÓN DE OBJETOS ===");
+
+        // Ejercicio 6: Asignación manual
+        System.out.println("\n--- Ejercicio 6: Estudiante (Asignación Manual) ---");
+        Estudiante est1 = new Estudiante();
+        est1.nombre = "Andres David Rodriguez";
+        est1.codigo = "750241000";
+        est1.semestre = 3;
+        est1.mostrarInformacion();
+
+        // Ejercicio 7: Dos objetos Vehiculo
+        System.out.println("\n--- Ejercicio 7: Dos Vehículos con datos diferentes ---");
+        Coche v1 = new Coche();
+        v1.marca = "Mazda"; 
+        v1.modelo = "3"; 
+        v1.velocidadActual = 60.0;
+        
+        Coche v2 = new Coche();
+        v2.marca = "Toyota"; 
+        v2.modelo = "Hilux"; 
+        v2.velocidadActual = 20.0;
+        
+        v1.mostrarEstado();
+        v2.mostrarEstado();
+
+        // Ejercicio 8: Tres objetos Producto (Estado distinto)
+        System.out.println("\n--- Ejercicio 8: Tres Productos (Mismo molde, distinto estado) ---");
+        Producto p1 = new Producto("Teclado", 150000, 5);
+        Producto p2 = new Producto("Mouse", 80000, 10);
+        Producto p3 = new Producto("Monitor", 900000, 3);
+        
+        p1.mostrarProducto();
+        p2.mostrarProducto();
+        p3.mostrarProducto();
+
+        // Ejercicio 9: Mutabilidad de Mascota
+        System.out.println("\n--- Ejercicio 9: Cambiando estado de Mascota (Edad) ---");
+        Mascota miMascota = new Mascota();
+        miMascota.nombre = "Frodo";
+        miMascota.edad = 1; // Primer estado
+        System.out.print("Estado inicial: "); 
+        miMascota.mostrarMascota();
+        
+        miMascota.edad = 2; // Cambio 1
+        miMascota.edad = 4; // Cambio 2
+        System.out.print("Estado final: "); 
+        miMascota.mostrarMascota();
+
+        // Ejercicio 10: Independencia en CuentaBancaria
+        System.out.println("\n--- Ejercicio 10: Independencia de valores en Cuentas ---");
+        CuentaBancaria cuentaA = new CuentaBancaria("001", "Andres", 500000);
+        CuentaBancaria cuentaB = new CuentaBancaria("002", "Isabella", 1200000);
+        
+        cuentaA.mostrarSaldo();
+        cuentaB.mostrarSaldo();
     }
 }
