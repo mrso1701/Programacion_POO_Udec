@@ -292,12 +292,58 @@ public class Modulo1_POO {
      mientras que los objetos definen el "quién es" (la información específica).*/
      
      /////////////////////////////////////////////////////////////////////////////
-     System.out.println("====== CLASE CELULAR ======");
+     System.out.println("\n====== CLASE CELULAR ======");
      
      // EJERCICIO 47: Uso correcto con instanciación
      Celular miCelular = new Celular(); // <--- CORRECCIÓN: Ahora el objeto sí existe
 
      miCelular.marca = "Samsung";
      miCelular.encender(); // Ahora funciona perfectamente
+     
+     //////////////////////////////////////////////////////////////////////////////////
+     
+     System.out.println("\n========= CLASE PEDIDO =========");
+     // EJERCICIO 69: Creación de cinco objetos diferentes
+        
+        Pedido p1 = new Pedido();
+        p1.numeroMesa = 5; 
+        p1.platoPrincipal = "Pizza Pepperoni"; 
+        p1.precio = 25000; 
+        p1.pagado = false;
+
+        // Objeto 2
+        Pedido p2 = new Pedido();
+        p2.numeroMesa = 2; 
+        p2.platoPrincipal = "Hamburguesa Doble"; 
+        p2.precio = 18500; 
+        p2.pagado = true;
+
+        // Objeto 3
+        Pedido p3 = new Pedido();
+        p3.numeroMesa = 10; 
+        p3.platoPrincipal = "Desgranado Familiar"; 
+        p3.precio = 35000; 
+        p3.pagado = false;
+
+        // Objeto 4
+        Pedido p4 = new Pedido();
+        p4.numeroMesa = 4; 
+        p4.platoPrincipal = "Perro Caliente"; 
+        p4.precio = 12000; 
+        p4.pagado = true;
+
+        // Objeto 5
+        Pedido p5 = new Pedido();
+        p5.numeroMesa = 8; 
+        p5.platoPrincipal = "Salchipapa Especial"; 
+        p5.precio = 22000; 
+        p5.pagado = false;
+
+        // Llamada al método para cada objeto
+        p1.mostrarDetalles();
+        p2.mostrarDetalles();
+        p3.mostrarDetalles();
+        p4.mostrarDetalles();
+        p5.mostrarDetalles();
      }
 }
