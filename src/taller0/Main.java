@@ -478,10 +478,14 @@ public class Main {
     // EJERCICIO 21: Atributo igual, demás distintos
     System.out.println("\n--- Ejercicio 21: Atributos compartidos vs distintos ---");
     Coche c1 = new Coche();
-    c1.marca = "Toyota"; c1.modelo = "Corolla"; c1.velocidadActual = 0;
+    c1.marca = "Toyota"; 
+    c1.modelo = "Corolla"; 
+    c1.velocidadActual = 0;
     
     Coche c2 = new Coche();
-    c2.marca = "Toyota"; c2.modelo = "Hilux"; c2.velocidadActual = 80;
+    c2.marca = "Toyota"; 
+    c2.modelo = "Hilux"; 
+    c2.velocidadActual = 80;
     // Ambos comparten la MARCA ("Toyota"), pero son modelos y estados distintos.
     c1.mostrarEstado();
     c2.mostrarEstado();
@@ -501,4 +505,38 @@ public class Main {
      */
     l1.mostrarInfo(); l2.mostrarInfo(); l3.mostrarInfo(); l4.mostrarInfo();
 }
+    
+    public static void ejecutarBloqueE() {
+    System.out.println("\n=== BLOQUE E: CONSTRUCTORES ===");
+
+    // Ejercicio 25: Dos formas de crear un Libro
+    System.out.println("\n--- Ejercicio 25: Instanciando Libros ---");
+    Libro libroVacio = new Libro(); // Constructor vacío
+    libroVacio.titulo = "La Vorágine";
+    
+    Libro libroParam = new Libro("Rayuela", "Julio Cortázar", 600); // Con parámetros
+    
+    libroVacio.mostrarInfo();
+    libroParam.mostrarInfo();
+
+    // Ejercicio 26: Instanciando Productos
+    System.out.println("\n--- Ejercicio 26: Instanciando Productos ---");
+    Producto pVacio = new Producto();
+    pVacio.nombre = "Mouse";
+    
+    Producto pParam = new Producto("Teclado Gamer", 150.0, 10);
+    
+    pVacio.mostrarProducto();
+    pParam.mostrarProducto();
+
+    // Ejercicio 28: Tres cuentas bancarias
+    System.out.println("\n--- Ejercicio 28: Creación masiva de Cuentas ---");
+    CuentaBancaria c1 = new CuentaBancaria("001", "Andrés Rodríguez", 5000.0);
+    CuentaBancaria c2 = new CuentaBancaria("002", "Juan Pérez", 1200.0);
+    CuentaBancaria c3 = new CuentaBancaria("003", "María López", 3500.0);
+
+    c1.mostrarSaldo();
+    c2.mostrarSaldo();
+    c3.mostrarSaldo();
+   }
 }
