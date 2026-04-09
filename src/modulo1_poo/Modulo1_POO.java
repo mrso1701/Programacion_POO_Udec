@@ -304,6 +304,20 @@ public class Modulo1_POO {
      
      System.out.println("\n========= CLASE PEDIDO =========");
      // EJERCICIO 69: Creación de cinco objetos diferentes
+     /* * EJERCICIO 70: SUSTENTACIÓN TÉCNICA
+     * * 1. CLASE SELECCIONADA: Pedido (Relacionada con el contexto de negocio).
+     * * 2. OBJETOS INSTANCIADOS: 
+     * Se crearon 5 objetos (pedido1, pedido2, pedido3, pedido4, pedido5) que representan mesas reales 
+     * en un restaurante con diferentes platos y estados de pago.
+     * * 3. ATRIBUTOS:
+     * - numeroMesa: Identificador entero de la ubicación.
+     * - platoPrincipal: Cadena de texto con el nombre del pedido.
+     * - precio: Valor decimal que representa el costo del plato.
+     * - pagado: Valor booleano que define si la cuenta fue saldada.
+     * * 4. COMPORTAMIENTOS:
+     * - marcarComoPagado(): Cambia el estado interno del objeto a verdadero.
+     * - mostrarDetalles(): Imprime en consola la información completa del objeto.
+     */
         
         Pedido pedido1 = new Pedido();
         pedido1.numeroMesa = 5; 
