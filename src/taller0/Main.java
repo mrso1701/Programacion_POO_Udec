@@ -512,9 +512,9 @@ public class Main {
     // Ejercicio 25: Dos formas de crear un Libro
     System.out.println("\n--- Ejercicio 25: Instanciando Libros ---");
     Libro libroVacio = new Libro(); // Constructor vacío
-    libroVacio.titulo = "La Vorágine";
+    libroVacio.titulo = "La Voragine";
     
-    Libro libroParam = new Libro("Rayuela", "Julio Cortázar", 600); // Con parámetros
+    Libro libroParam = new Libro("Rayuela", "Julio Cortazar", 600); // Con parámetros
     
     libroVacio.mostrarInfo();
     libroParam.mostrarInfo();
@@ -523,6 +523,8 @@ public class Main {
     System.out.println("\n--- Ejercicio 26: Instanciando Productos ---");
     Producto pVacio = new Producto();
     pVacio.nombre = "Mouse";
+    pVacio.precio = 200.0;
+    pVacio.stock = 3;
     
     Producto pParam = new Producto("Teclado Gamer", 150.0, 10);
     
@@ -530,10 +532,10 @@ public class Main {
     pParam.mostrarProducto();
 
     // Ejercicio 28: Tres cuentas bancarias
-    System.out.println("\n--- Ejercicio 28: Creación masiva de Cuentas ---");
-    CuentaBancaria c1 = new CuentaBancaria("001", "Andrés Rodríguez", 5000.0);
-    CuentaBancaria c2 = new CuentaBancaria("002", "Juan Pérez", 1200.0);
-    CuentaBancaria c3 = new CuentaBancaria("003", "María López", 3500.0);
+    System.out.println("\n--- Ejercicio 28: Creacion masiva de Cuentas ---");
+    CuentaBancaria c1 = new CuentaBancaria("001", "Andres Rodríguez", 5000.0);
+    CuentaBancaria c2 = new CuentaBancaria("002", "Juan Perez", 1200.0);
+    CuentaBancaria c3 = new CuentaBancaria("003", "María Lopez", 3500.0);
 
     c1.mostrarSaldo();
     c2.mostrarSaldo();
