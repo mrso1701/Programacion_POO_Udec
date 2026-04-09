@@ -375,5 +375,14 @@ public class Modulo1_POO {
         // Prueba Ejercicio 72 (Fábrica)
         Avion miAvion = Avion.crearAvionComercial("Avianca", "Bogotá");
         miAvion.mostrarInfo();
+        
+        ///////////////////////////////////////////////////////////////
+        System.out.println("\n================= CLASE USUARIO SISTEMA =================");
+        UsuarioSistema user1 = new UsuarioSistema("andres_dev", "1234");
+        UsuarioSistema userClonado = new UsuarioSistema(user1); // Se copia user1
+    
+        System.out.println("--- Usuarios ---");
+        user1.mostrarUsuario();
+        userClonado.mostrarUsuario();
      }
 }
