@@ -391,10 +391,10 @@ public class Main {
     }
     
     public static void ejecutarBloqueB(){
-        System.out.println("\n=== BLOQUE B: CONSTRUCCIÓN DE OBJETOS ===");
+        System.out.println("\n=== BLOQUE B: CONSTRUCCION DE OBJETOS ===");
 
         // Ejercicio 6: Asignación manual
-        System.out.println("\n--- Ejercicio 6: Estudiante (Asignación Manual) ---");
+        System.out.println("\n--- Ejercicio 6: Estudiante (Asignacion Manual) ---");
         Estudiante est1 = new Estudiante();
         est1.nombre = "Andres David Rodriguez";
         est1.codigo = "750241000";
