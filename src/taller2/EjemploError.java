@@ -12,7 +12,7 @@ public class EjemploError {
         System.out.println("Este es un metodo estatico. No puede usar 'this'.");
     }
 
-    // Metodo de instancia (Uso correcto de this)
+    //Metodo de instancia (Uso correcto de this)
     public void mostrarDetalle() {
         System.out.println("Detalle: " + this.detalle);
     }
