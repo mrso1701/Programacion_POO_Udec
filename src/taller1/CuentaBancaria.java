@@ -5,7 +5,7 @@ public class CuentaBancaria {
     double saldo;
     String tipoCuenta;
 
-    //Constructor por defecto [cite: 125]
+    //Constructor por defecto 
     public CuentaBancaria() {
         this.numeroCuenta = "0000000000";
         this.saldo = 0.0;
@@ -19,7 +19,7 @@ public class CuentaBancaria {
         this.saldo = 0.0; // Saldo inicial por defecto
     }
 
-    //Constructor sobrecargado con tres parametros [cite: 127]
+    //Constructor sobrecargado con tres parametros 
     public CuentaBancaria(String numeroCuenta, double saldo, String tipoCuenta) {
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
