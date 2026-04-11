@@ -8,7 +8,7 @@ public class Estudiante {
 
     // Constructor por defecto con valores genéricos
     public Estudiante() {
-        this.nombre = "Estudiante Genérico";
+        this.nombre = "Alejandro";
         this.edad = 0;
         this.curso = "Sin asignar";
     }
@@ -33,5 +33,10 @@ public class Estudiante {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
         System.out.println("Curso: " + curso);
+    }
+    
+    @Override
+    public String toString() {
+        return "Estudiante: " + nombre + " | Edad: " + edad + " | Curso: " + curso;
     }
 }

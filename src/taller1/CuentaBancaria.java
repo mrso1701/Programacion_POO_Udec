@@ -33,4 +33,8 @@ public class CuentaBancaria {
         System.out.println("Tipo de Cuenta: " + tipoCuenta);
         System.out.println("---------------------------");
     }
+    @Override
+    public String toString() {
+        return "Cuenta: " + numeroCuenta + " | Tipo: " + tipoCuenta + " | Saldo: $" + saldo;
+    }
 }
