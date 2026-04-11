@@ -22,6 +22,13 @@ public class Main {
         System.out.println("Coche: " + miCoche.getMarca() + " " + miCoche.getModelo());
         miCoche.acelerar(20.0);
         
+        //CLASE A///////////////////////////
+        ClaseA objeto = new ClaseA();
+        
+        // System.out.println(objeto.datoSecreto); 
+        // ERROR: datoSecreto tiene acceso privado en ClaseA.
+        // Esto sucede porque 'private' limita el alcance a la propia clase
+        
     }
     
 }
