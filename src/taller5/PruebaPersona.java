@@ -7,10 +7,10 @@ public class PruebaPersona {
 
         // Intento de acceso a atributo privado
         // System.out.println(p.nombre); 
-        // ERROR: nombre tiene acceso privado en Persona [cite: 379]
+        // ERROR: nombre tiene acceso privado en Persona 
 
         // Acceso a atributo de paquete (default)
-        System.out.println("Edad (acceso default): " + p.edad); // Funciona [cite: 378]
+        System.out.println("Edad (acceso default): " + p.edad); // Funciona
 
         // Acceso al nombre mediante métodos públicos
         System.out.println("Nombre (vía getter): " + p.getNombre());
